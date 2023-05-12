@@ -1,0 +1,316 @@
+---
+title: "PS531 Final"
+author: "Paul Un"
+date: "2023-05-12"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message=FALSE, warnings=FALSE, echo = TRUE)
+```
+
+1. Describe a substantive question in social science. What theory are you
+   assessing? Why should anyone care? (2 paragraphs)
+   
+  Current research on foreign aid and regime durability often elides questions about aid efficacy. Efficacy is difficult to measure, and its impacts are not immediately clear. Do aid recipients hold donor or recipient parties accountable for botched implementation? To supplement my first-year project - which uses geolocated data on foreign aid projects to broadly explore the relationship between aid and regime durability - I propose a research design for a future study to answer the narrower question of the relationship between efficacy and regime support. In the following pre-analysis plan for my project, I will describe an empirical strategy for answering the question, how do citizens in recipient states allocate blame for poorly implemented development aid projects?
+  
+  Current evidence in the literature is mixed on the question of how citizens assign blame for poor aid implementation. While politicians do try to claim credit for foreign aid projects, deserved or not (Cruz and Scheider 2013), it is unclear how much information voters receive about how to allocate credit (Guiteras and Mobarak 2015). And while credit claiming may backfire if implementation is poor (Briggs 2019), it is also unclear how this effect may operate in an information poor environment. This problem is important for both development aid practitioners and analysts of comparative politics. If citizens in recipient countries are incorrectly assigning credit and blame, then it becomes more difficult for donors to accurately receive feedback and improve the efficacy of their programs. If, for example, voters are assigning credit for projects to recipient country politicians, then donors may be receiving feedback about projects that have been biased through a partisan lens. For the analyst, meanwhile, incongruencies in credit and blame assignment are particularly interesting. For example, if donors are more likely to be blamed for poor implementation, and local politicians more likely to be given credit in the event of efficacious implementation, this may help explain the link between foreign aid and regime durability noted in the literature (Bermeo 2019). 
+  
+2. The study you propose involves learning about a theory by observing certain
+   of its implications. What one or two hypotheses that arise from the theory
+   are you planning to assess? Why or how does the theory justify your
+   expectations about these hypotheses? (1 or 2 paragraphs)
+
+	Answering the question of how citizens allocate blame for poor aid project implementation requires first identifying the actors involved. In the previous literature on aid projects implementation, three groups of actors are typically identified – citizens, donors, and local politicians. In the context of foreign aid, I hypothesize that:
+	
+H1: If citizens perceive a project to be poorly implemented, then they will be more likely to assign blame to donors.
+
+H2: If citizens perceive a project to be well implemented, then they will be more likely to assign credit to local politicians.
+
+I predict this to be the case for two reasons. First, local politicians are more likely to claim credit for well-implemented projects, leaving only the poorly implemented projects to be associated with donors. Second, citizens will be motivated by in-group biases to assign blame to foreign donors. Aid implementation literature has come to focus on tensions between aid project workers and recipient communities in recent years, especially with the increasing number of Chinese workers working overseas on development projects (Luo et al. 2021). 
+
+3. What data and research design will help you answer this question? Why are
+   you making these choices? (Remember that a statistical model is not a
+   research design.) (2 paragraphs)
+
+	To answer this question, I plan to use an observational survey design with data gathered in Cambodia. Cambodia is chosen for three reasons. First, it is a quintessential example in the literature of an “aid dependent” state (Ear 2013). Second, there is a very high volume of projects. Between 2000 and 2017, Cambodia was the site of 308 Chinese aid projects alone (Custer et al. 2021), placing it behind only the much larger Angola. Third, Cambodia’s relatively small size (69,900 sq mi, slightly smaller than Washington State) makes the random administration of surveys across a representative sample of aid recipient districts more feasible than in a larger country.
+	
+	The survey-based observational research design is superior because it is better for measuring both the independent and dependent variables. First, perceived implementation efficacy is a much more straightforward measure than measures based on metrics such as money spent, or time-to-completion. While these measures are of great interest to policy practitioners, they are often opaque and difficult to observe for analysts. In a low information political context – such as the Cambodian countryside – it is also unclear how such measures would translate to citizens’ perceptions. Survey and interview methods are also some of the only strategies available for gathering data about the outcome variable of interest, credit/blame assignment. As noted above, voters’ misperceptions of responsibility for aid projects have hampered previous research. While voters’ assignment of credit and blame can be indirectly observed in some cases (e.g., by analyzing changes in vote share), the simplest method for observing who receives blame for poor implementation is to ask citizens directly.
+
+4. What are the advantages and disadvantages of this research design to
+   addressing your question? (2 paragraphs discussing **both** advantages and
+   disadvantages of the research design; could be 1 paragraph for advantages
+   and 1 for disadvantages or combined discussion across 2 paragraphs.)
+
+	Two immediate drawbacks to the research design presented above are the potential for non-response bias and issues of reverse causality. First, even with randomized question order, asking about project implementation and linking it implicitly to government performance may generate pressure toward non-response. Worse, such pressure would be systematically more likely to be found in the government-responsibility outcome group, since allocating blame toward the government may be more politically sensitive than allocating blame toward donors. Second, there is the potential for reverse causality. The design presented here may demonstrate an association between project implementation and blame allocation, but it is also conceivable that partisan or nationalistic biases prime voters to view projects they believe to be implemented by their local elites as more efficacious. This study will provide proof of concept for future experimental research, which will adjudicate whether the correct causal pathway really is that voters first see projects implemented, and then subsequently assign blame or credit.
+	
+	However, this project also has two strong advantages. First, it is relatively simple. Using a very short survey to gather data is less costly than either a survey experiment, or especially less costly than a field experiment assessing citizens’ knowledge of a researcher placed development project. Second, it allows us to gather data on both variables of interest (implementation efficacy and blame assignment) without resorting to making inferences from proxy variables, such as changes in vote share in a difference-in-differences design.
+
+5. Describe your measures and any indices you construct. (1 paragraph)
+
+	Respondents will be asked only a short, three-item survey, to ensure maximum responsiveness and to minimize cost for the future researcher, who will hand administer the surveys. First, respondents – living in a random selection of districts chosen from ChinaAid’s dataset of geolocated Chinese development aid projects – will be asked if they are aware of any development projects near them. If they say yes, they will be asked two follow up questions in a random order. Who do you think is responsible for the project? And; On a scale of one to ten, how well do you think the project is going? There will thus be two measures – the measure of implementation efficacy, on the scale of one to ten, and whether respondents assign responsibility to international donors, or local authorities. This latter measure will include even respondents who incorrectly identify the responsible party (e.g., they assign credit for a Chinese roadworks to Japanese aid funds). The variable of interest is only if respondents assign responsibility to a foreign or domestic actor.
+
+6. Use data to make the case that your research design allows you to interpret
+   observed quantities (like observed data comparisons or parameters of models
+   fit to data) as theoretically relevant and clear: (Most people will only
+   have to do either 6.1 and 6.2 **or** 6.3 and 6.4 here depending on whether
+   you have a randomized design or an observational design).
+
+   1. **If you are using an observational study design** then explain how you
+      will make the case for interpretable comparisons (this is the same as
+      question as 'What is your identification strategy?'). That is, explain
+      how you will use statistical adjustment  (like matching or covariance
+      adjustment aka "controlling for") to persuade yourself and others that
+      the comparison that you are showing reflects what you say it does. If you
+      are making comparative or causal inference, I assume you will explain the
+      natural or quasi-experimental design and approach you will be using here.
+      "I controlled for a lot of background variables in a linear model." will
+      not be acceptable here. If you are making population inferences, you
+      should explain your approach as well. (2 paragraphs plus some tables or
+      figures)
+
+	My future project will use a two-step adjustment strategy. First, researchers will collect simple demographic data on the respondents. Responses will then be weighted based on comparison to Cambodian census data for each district. This weighting allows for valid population inferences since it corrects for any systematic non-response bias in survey response. However, this design is no longer truly random sampling, and the data may now be systematically biased in other, hidden, ways.
+	
+	Second, as an alternative to weighting, I will use a simple bootstrapping procedure, resampling with replacement to generate many samples. Bootstrap resampling allows for measurement of the quality of the inference. Even though the true population (number of respondents with knowledge of aid projects) is unknown, bootstrapping allows us to use the sample as the population, for the purposes of ascertaining the quality of the inference vis-à-vis the sample statistic of interest in the sample. Both strategies will be included separately for the sake of robustness.
+	
+```{r, message=FALSE, warnings=FALSE, echo=FALSE}
+# Load libraries
+library(boot)
+library(ggplot2)
+
+# Fake data
+x <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+y <- c(0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1)
+data <- data.frame(x, y)
+
+# Bootstrap function
+spearman_boot <- function(data, indices) {
+  sample_data <- data[indices, ]
+  return(cor.test(sample_data$x, sample_data$y, method = "spearman", exact=FALSE)$estimate)
+}
+
+# bootstrapping
+set.seed(123) # Set a seed for reproducibility
+n_bootstraps <- 1000
+boot_results <- boot(data, spearman_boot, R = n_bootstraps)
+
+# Create a figure
+boot_df <- data.frame(Iteration = 1:n_bootstraps, Correlation = boot_results$t)
+ggplot(boot_df, aes(x = Iteration, y = Correlation)) +
+  geom_point() +
+  theme_minimal() +
+  labs(title = "Bootstrapped Spearman Rank Correlation",
+       x = "Iteration",
+       y = "Spearman Rank Correlation")
+
+```
+   2. **If you are using an observational study design**, explain how you will
+      judge the success of your adjustment strategy. For example, you may
+      explain here about balance tests and other diagnostics that refer to the
+      problem of adjustment for confounding or making the case for an
+      as-if-randomized comparison, or an as-if-randomly sampled set of
+      observations, etc.. (1 paragraph)
+
+Bootstrapping helps generate an “as-if-randomly sampled” set of observations by resampling the original data with replacement, thereby creating multiple datasets that are like the original, but not identical. This allows us to observe the stability of the relationship between our variables of interest, by estimating the variability of the correlation coefficient. If the relationship’s correlation coefficient remains robust, then we can deem our adjustment strategy successful. The figure reproduced above displays the results of bootstrapped mock data, with a relatively consistent coefficient across multiple bootstraps.
+
+
+7. Explain your plans for any missing data or extreme outcome or covariate
+   values you may encounter when you get the real data (or perhaps you have the
+   background data but not the real outcomes, so you can explain your plans for
+   such data issues in that case here too). (1 or 2 paragraphs)
+
+	This project is very vulnerable to the issue of missing data in two different ways. One issue may be that respondents are unaware of development aid projects happening in their communities. A related problem is that the question wording, in trying to be neutral, may fail to prompt an association with projects respondents are aware of. While this problem may make gathering a sample more difficult for the researcher, it does not harm the ability to infer a relationship, so long as ignorance of nearby projects is orthogonal to blame assignment. However, is possible that there will be pattern in the kind of person who answers ‘no’ to the opening question. If respondents have already assigned responsibility for a project in their minds to local authorities, they may be more reticent to discuss their misgivings (or even their praises) for the project with researchers, and so might feign ignorance about nearby projects.
+	
+	Once data are gathered, they will be combed to see if there are some districts with seemingly disproportionate and biased missing data (e.g., more people than usual said they were unaware of any projects, and among those that were aware, they overwhelmingly assigned responsibility to one of local or foreign actors). As a robustness check, tests will be run both with and without these districts included, to see if and how results change. 
+
+8. What statistical tests do you plan to use? Explain why you chose these tests
+   and any decision making criteria you will use upon seeing the results of the
+   tests. You should also engage with the problem of multiple testing here if
+   you are going to show the results of more than one test. (Recall that
+   confidence intervals and hypothesis tests convey more or less the same
+   information. So a confidence interval is a form of testing.) (1 paragraph)
+
+	I plan to use the Spearman rank correlation test (`cor.test( , , method= “spearman”)`). This test is preferred to alternatives – such as the point-biserial correlation or Pearson’s correlation – because it is more robust to outliers and does not assume normality in the data generating process. I am only using one Spearman rank correlation test to test both of my hypotheses. The ranked test is also better suited for this task, since we are hypothesizing that the data will not be normally distributed – i.e., there will be skew within the binary categories of domestic and foreign (coded and 0 and 1, respectively). Use of a ranked test instead of measuring the efficacy rating as a continuous variable thus allows us to assess the strength and direction of the association more accurately. 
+
+
+9. Explain how you will judge the performance of those tests. Will you only use
+   simple false positive rate and power? Or do you need to add family-wise
+   error rate? false discovery rate?  Or something else? Explain why you made
+   this choice. (1 paragraph)
+
+	Since I am only using one test to evaluate my hypotheses, I do not need to account for the family-wise error rate. Since there is only one statistical test being performed, there is not the risk of alpha-inflation, as might occur in multiple testing. This is a benefit of the simple causal story and measures chosen for this research design. Instead, the alpha level of 0.05 is retained, as a relatively conservative level of tolerance for false rejection of the null hypothesis of no effects. Similarly, since my hypotheses are more-or-less inverses of the same hypothesis, I do not need to include false discovery rate, since I am unconcerned about the multiple comparison problem. Instead, I will only evaluate my test of choice on simple false positive rate (Type I error) and power (Type II error). To evaluate these, I will use a simulation-based approach to observe the proposed Spearman correlation test against data where the true population parameters are known. By comparing the test results to known outcomes over many simulations, we can see the false positive rate and power of the test.
+
+10. Show and explain how your test performs in regards those properties (at
+   least you will show false positive rate and power). (2--4 paragraphs)
+
+	The simulation-based approach to testing for false positive rate and power first defines a set of simulation parameters. In this case, I defined the true correlation level (rho) as 0.3. The number of simulations and the sample size were defined as 1000 and 50 respectively. The relatively high number of simulations allows for a more accurate assessment of the Type I and Type II errors of the test of interest. A plot of the results is reproduced below.
+
+```{r, message=FALSE, warnings=FALSE, echo=FALSE}
+# Load libraries
+install.packages("mvtnorm", repos = "https://cran.r-project.org/web/packages/mvtnorm/index.html")
+library(mvtnorm)
+library(ggplot2)
+
+# Simulation parameters
+n_simulations <- 1000
+sample_size <- 50
+true_correlation <- 0.3
+significance_level <- 0.05
+
+# counters
+false_positives <- 0
+true_positives <- 0
+
+# simulations
+set.seed(123) # reproducibility and all that jazz
+for (i in 1:n_simulations) {
+  # Generate random data with the specified correlation
+  data <- rmvnorm(sample_size, mean = c(0, 0), sigma = matrix(c(1, true_correlation, true_correlation, 1), ncol = 2))
+  x <- data[, 1]
+  y <- data[, 2]
+
+  # Apply cor.test()
+  test_result <- cor.test(x, y, method = "spearman", exact=FALSE)
+
+  if (test_result$p.value < significance_level) {
+    if (true_correlation == 0) {
+      false_positives <- false_positives + 1
+    } else {
+      true_positives <- true_positives + 1
+    }
+  }
+}
+
+# Calculate false positive rate and power
+false_positive_rate <- false_positives / n_simulations
+power <- true_positives / n_simulations
+cat("False positive rate:", false_positive_rate, "\n")
+cat("Power:", power, "\n")
+
+# Data
+plot_data <- data.frame(
+  Metric = c("False Positive Rate", "Power"),
+  Value = c(false_positive_rate, power)
+)
+
+# Create a bar plot
+ggplot(plot_data, aes(x = Metric, y = Value)) +
+  geom_bar(stat = "identity", fill = "steelblue", width = 0.5) +
+  theme_minimal() +
+  labs(title = "False Positive Rate and Power of the Spearman Rank Correlation Test",
+       x = "Metric",
+       y = "Value") +
+  ylim(0, 1) +
+  geom_text(aes(label = round(Value, 2)), vjust = -0.25, size = 4)
+```
+	These results indicate very mixed results for our test in question. While the false positive rate is very low, the power is also relatively low. Disciplinary norms dictate that a test should strive for a power level of 0.8, while some researchers advocate for even higher levels of 0.9 or above (Cohen 2013). In these simulations, the Spearman correlation test falls far below those thresholds, with a power level of only 0.52. Substantively, this means that in many cases where there is in fact a real correlation, the test will fail to detect it. However, the low false positive rate means there is still a strong case for adopting the test. Since the Spearman rank correlation is unlikely to generate false positives, we can treat any correlations we do discover in the survey as conservative lower-bound estimates for the true strength and direction of the relationship. This estimate will then be useful theoretical background for informing future empirical and experimental work.
+
+11. What statistical estimators do you plan to use? Explain why you chose these
+    estimators. Especially explain what is your target of estimation --- what
+    is the estimand? (1 paragraph)
+
+	The target of estimation in the context of the Spearman rank correlation test is the true value of the correlation coefficient (rho). The estimand is thus the strength and direction of the association between the variable of interest in the population. This estimator was chosen because it gives a clear estimand in the population for the outcome variable of interest. Responsibility assignment for aid implementation can be clearly understood as the strength (towards domestic or foreign) and direction (positive or negative perception of implementation) of the correlation. 
+
+12. Explain how you will judge the performance of those estimators (especially
+    bias and MSE)? (1 paragraph)
+
+	Similarly to the strategy employed to evaluate the Type I and Type II errors of the statistical test, I will also use a simulation-based approach to judge performance vis-à-vis the target estimand (rho). While simulation-based approaches are useful in general, and have many applications, they are especially valuable in situations where the researcher is preparing for future field work. Testing the performance of the Spearman rank correlation’s estimator beforehand tells the researcher whether it is worth constructing an entire survey around the premise of having ranked and binary choice survey outcomes. In this case, proximity to true rho will be judged using the metrics of bias and MSE. Since there are many concerns already about potentially biased samples, we need to ensure that our estimation procedure is as unbiased as possible, to not further skew any results.
+
+13. Show and explain how your estimator performs in regards those properties
+    (at least bias and MSE).  (2--4 paragraphs)
+    
+  The estimator in this case performs quite well with regards to both bias and MSE. The measured bias (-0.017) is relatively low. Only about two percent of the cases, in this instance, would incorrectly fall out of the range of the estimator used, relative to the ‘true’ population distribution. This two percent bias for the estimator is acceptable, especially if the survey researcher can gather a large enough sample of respondents – thus bringing the sampled distribution closer to the population distribution.
+  
+  The estimator also performs well with regards to MSE. The squared-error methodology of MSE clearly highlights models with occasional large errors or outlier estimates. In this instance, the relatively low MSE (0.018), demonstrates that there are very few such large errors. The model is thus a good fit for the underlying distribution of the data. While there are no hard rules for what degree of bias or MSE are acceptable (Berk 2008), these low numbers indicate that the estimator is performing relatively well.
+	
+
+Bias and MSE results:
+
+```{r, message=FALSE, warnings=FALSE, echo=FALSE}
+# Load libraries
+library(mvtnorm)
+library(MASS)
+
+# Simulation parameters
+n_simulations <- 1000
+sample_size <- 50
+true_correlation <- 0.3
+
+estimated_correlations <- numeric(n_simulations)
+
+# simulations
+set.seed(123) # For reproducibility
+for (i in 1:n_simulations) {
+  # Generate random data with the specified correlation
+  data <- rmvnorm(sample_size, mean = c(0, 0), sigma = matrix(c(1, true_correlation, true_correlation, 1), ncol = 2))
+  x <- data[, 1]
+  y <- data[, 2]
+
+  # Calculate correlation coefficient
+  estimated_correlations[i] <- cor(x, y, method = "spearman")
+}
+
+# Calculate bias and MSE
+bias <- mean(estimated_correlations) - true_correlation
+mse <- mean((estimated_correlations - true_correlation)^2)
+
+cat("Bias:", bias, "\n")
+cat("MSE:", mse)
+```
+
+
+14. Make one mock figure or table of the kind you plan to make when you use the
+    actual outcome. Interpret the results of the mock analysis as if it were
+    the real analysis. Saying something like, "If the real outcome were as I
+    have simulated it, then the following table/figure would mean such and so
+    about the theory." (1 paragraph)
+    
+   The table below displays the results for the Spearman rank correlation test conducted on a subset of the survey response data. The results show that rho is not equal to zero (rho = 0.426), showing evidence of a correlation between the ranked variable (perceived efficacy) and the binary variable (responsibility assignment). There is thus sufficient evidence to reject the null hypothesis of no effects. However, the results show a positive correlation between perceived efficacy and responsibility, indicating that respondents in this sample who perceived projects to be will-implemented, also tended to believe that they were foreign-run development projects. These are the opposite of my predictions – if this simulated sample were genuine, it would provide evidence against my hypotheses.
+
+```{r, message=FALSE, warnings=FALSE, echo=FALSE}
+# Fake data
+x <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+y <- c(0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1)
+
+# test
+spearman_result <- cor.test(x, y, method = "spearman", exact=FALSE)
+
+print(spearman_result)
+```
+
+
+
+15. Include a code appendix and a link to the github repository for this paper.
+github repository:
+https://github.com/unpaul8/PS531Final.git
+
+Appendix: All code for this report
+x = ranked measure of project efficacy by respondent
+y = who respondent indicated they believed was responsible for development project: domestic actor (0) or foreign actor (1).
+```{r ref.label=knitr::all_labels(), echo=TRUE, eval=FALSE}
+
+```
+
+16. Include references with appropriate in-text citations.
+
+Bibliography:
+
+Berk, Richard A. *Statistical learning from a regression perspective*. Springer, 2008.
+
+Bermeo, Sarah. “Democracy, Aid, and Donor intent.” *Annals of Comparative Democratization* 17, no. 4 (2019): 4-7.
+
+Briggs, Ryan C. "Receiving foreign aid can reduce support for incumbent presidents." *Political Research Quarterly* 72, no. 3 (2019): 610-622.
+
+Cohen, Jacob. *Statistical power analysis for the behavioral sciences.* Academic press, 2013.
+
+Custer, S., Dreher, A., Elston, T.B., Fuchs, A., Ghose, S., Lin, J., Malik, A., Parks, B.C., Russell, B., Solomon, K., Strange, A., Tierney, M.J., Walsh, K., Zaleski, L., and Zhang, S. 2021. “Tracking Chinese Development Finance: An Application of AidData’s TUFF 2.0 Methodology.” Williamsburg, VA: AidData at William & Mary.
+
+Cruz, Cesi, and Christina J. Schneider. "Foreign aid and undeserved credit claiming." *American Journal of Political Science* 61, no. 2 (2017): 396-408.
+
+Ear, Sophal. *Aid dependence in Cambodia: How foreign assistance undermines democracy.* Columbia University Press, 2013.
+
+Guiteras, Raymond P., and Ahmed Mushfiq Mobarak. “Does development aid undermine political accountability? Leader and constituent responses to a large-scale intervention.” No. w21434. National Bureau of Economic Research, 2015.
+
+Hughes, Caroline. "Understanding the elections in Cambodia 2013." *AGLOS: Journal of Area-Based Global Studies* 2014 (2015): 1-20.
+
+Luo, Jing Jing, and Kheang Un. "China’s Role in the Cambodian People’s Party’s Quest for Legitimacy." *Contemporary Southeast Asia* 43, no. 2 (2021): 395-419.
